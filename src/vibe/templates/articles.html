@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Articles</title>
+</head>
+<body>
+    <h1>Available Articles</h1>
+    <form method="GET">
+        <input type="text" name="query" placeholder="Search articles">
+        <input type="submit" value="Filter">
+    </form>
+    <ul>
+        {% for article in articles %}
+            <li>{{ article.name }} - {{ article.description }} - ${{ article.price }}
+                <a href="{{ url_for('add_to_cart', article_id=article.id) }}">Add to Cart</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('cart') }}">View Cart</a>
+</body>
+</html>

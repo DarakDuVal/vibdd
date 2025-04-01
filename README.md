@@ -1,4 +1,4 @@
-# vibdd - Examples on vibe coding applying behavior-driven design (BDD) and test-driven design (TDD) paradigms
+# vibddd - Examples on vibe coding applying behavior-driven design (BDD) and test-driven design (TDD) paradigms
 
 How well can ChatGPT code?
 
